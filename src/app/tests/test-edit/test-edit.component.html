@@ -1,0 +1,133 @@
+<div class="row">
+  <div class="col-xs-12">
+    <form [formGroup]="testForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-xs-12">
+          <button
+            type="submit"
+            class="btn btn-success"
+            [disabled]="!testForm.valid"
+            >Save</button>
+          <button type="button" class="btn btn-danger" (click)="onCancel()">Cancel</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="student">Student</label>
+            <input
+              type="text"
+              id="student"
+              formControlName="student"
+              class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h4>English</h4>
+          <div class="col-xs-4">
+            <div class="form-group">
+              <label for="englishTest1">Test 1</label>
+              <input
+              type="text"
+              id="englishTest1"
+              formControlName="englishTest1"
+              class="form-control">
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="form-group">
+              <label for="englishTest2">Test 2</label>
+              <input
+              type="text"
+              id="englishTest2"
+              formControlName="englishTest2"
+              class="form-control">
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="form-group">
+              <label for="englishTest3">Test 3</label>
+              <input
+              type="text"
+              id="englishTest3"
+              formControlName="englishTest3"
+              class="form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h4>Math</h4>
+          <div class="col-xs-4">
+            <div class="form-group">
+              <label for="mathTest1">Test 1</label>
+              <input
+              type="text"
+              id="mathTest1"
+              formControlName="mathTest1"
+              class="form-control">
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="form-group">
+              <label for="mathTest2">Test 2</label>
+              <input
+              type="text"
+              id="mathTest2"
+              formControlName="mathTest2"
+              class="form-control">
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="form-group">
+              <label for="mathTest3">Test 3</label>
+              <input
+              type="text"
+              id="mathTest3"
+              formControlName="mathTest3"
+              class="form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h4>Science</h4>
+          <div class="col-xs-4">
+            <div class="form-group">
+              <label for="scienceTest1">Test 1</label>
+              <input
+              type="text"
+              id="scienceTest1"
+              formControlName="scienceTest1"
+              class="form-control">
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="form-group">
+              <label for="scienceTest2">Test 2</label>
+              <input
+              type="text"
+              id="scienceTest2"
+              formControlName="scienceTest2"
+              class="form-control">
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="form-group">
+              <label for="scienceTest3">Test 3</label>
+              <input
+              type="text"
+              id="scienceTest3"
+              formControlName="scienceTest3"
+              class="form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

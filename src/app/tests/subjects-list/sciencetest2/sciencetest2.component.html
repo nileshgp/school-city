@@ -1,0 +1,33 @@
+<a style="cursor: pointer;"
+   class="list-group-item clearfix"
+   (click)="OnShowData()">
+   <button class="btn btn-primary pull-right">More Details</button>
+   <div class="pull-left">
+    <p class="list-group-item-text">Science Test 2 Average Score: {{ testAverage }}%</p>
+  </div>
+  <div class="pull-right">
+  </div>
+  <table *ngIf="showData" class="table">
+    <thead>
+      <tr>
+        <td colspan="4">Additional Details</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2" *ngFor="let hScore of highestScore | keyvalue" > {{ hScore.value | json }} </td>
+        <td colspan="2">Tests Completed: {{ testsCompleted }}</td>
+      </tr>
+      <tr>
+        <td colspan="2" *ngFor="let lScore of lowestScore | keyvalue" >{{ lScore.value | json }} </td>
+        <td colspan="2">Average Score of Completed Tests: {{ testAverage }}%</td>
+      </tr>
+      <tr>
+        <th colspan="4" scope="row"> </th>
+      </tr>
+    </tbody>
+    <div colspan="2" *ngFor="let score of scoresByScore | keyvalue" >
+      <p>{{score.value.name }} {{score.value.score }}</p>
+    </div>
+  </table>
+</a>

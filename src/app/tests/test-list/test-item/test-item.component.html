@@ -1,0 +1,22 @@
+<a
+  style="cursor: pointer;"
+  [routerLink]="[index]"
+  routerLinkActive="active"
+  class="list-group-item clearfix">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ test.student }}</h4>
+    <hr>
+    <h5 class="list-group-item-heading">English Tests</h5>
+    <p class="list-group-item-text">Test 1: {{ test.englishTest1 }}% Test 2: {{ test.englishTest2 }}% Test 3: {{ test.englishTest3 }}%</p>
+    <hr>
+    <h6 class="list-group-item-heading">Math Tests</h6>
+    <p class="list-group-item-text">Test 1: {{ test.mathTest1 }}% Test 2: {{ test.mathTest2 }}% Test 3: {{ test.mathTest3 }}%</p>
+    <hr>
+    <h6 class="list-group-item-heading">Science Tests</h6>
+    <p class="list-group-item-text">Test 1: {{ test.scienceTest1 }}% Test 2: {{ test.scienceTest2 }}% Test 3: {{ test.scienceTest3 }}%</p>
+    <hr>
+    <p class="list-group-item-text">Average Score: {{ average }} %</p>
+  </div>
+</a>
+<!-- [routerLink]="[index]" -->
+
